@@ -1,0 +1,4 @@
+Autor: Diego José López Campos
+Carné: 23242
+Trabajo: HOJA DE TRABAJO 2
+CURSO: ALGORITMOS Y ESTRUCTURAS DE DATOS
