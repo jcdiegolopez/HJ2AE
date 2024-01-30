@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 /**
  * Main app donde se interacciona con el archivo
+ * @author Diego Jose Lopez Campos
+ * @version 1.0.3 [29/01/2024]
  */
 public class App {
     

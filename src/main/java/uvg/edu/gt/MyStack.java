@@ -1,5 +1,5 @@
 package uvg.edu.gt;
-import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  * Esta clase es un stack generico
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class MyStack<E> implements UVGStack<E> {
     
-    protected ArrayList<E> stack = new ArrayList<E>(); 
+    protected Vector<E> stack = new Vector<E>(); 
 
 
     @Override
@@ -40,7 +40,7 @@ public class MyStack<E> implements UVGStack<E> {
      */
     public E top() throws Exception {
         if(stack.size()>=0){
-            return stack.get(stack.size()-1);
+            return stack.lastElement();
         }else{
             throw new Exception("Stack vacio");
         }
