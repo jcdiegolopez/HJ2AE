@@ -1,5 +1,9 @@
 package uvg.edu.gt;
 
+
+/**
+ * Interfaz de calculadora
+ */
 public interface POSFIXCalc {
     
     int evaluate(String expression);

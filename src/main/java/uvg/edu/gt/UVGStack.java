@@ -1,5 +1,9 @@
 package uvg.edu.gt;
 
+
+/**
+ * Interfaz de stack con generics
+ */
 public interface UVGStack<E>  
 {
 

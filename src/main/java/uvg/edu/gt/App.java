@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-
+/**
+ * Main app donde se interacciona con el archivo
+ */
 public class App {
     
     public static void main(String[] args){
@@ -22,6 +24,7 @@ public class App {
                 case 1:
                     
                     try {
+
                         System.out.println("Ingrese el nombre del archivo: ");
                         String fileName = scanner.next();
                         System.out.println("------------------RESULTADO--------------------");
@@ -29,8 +32,11 @@ public class App {
                         String line = "";
                         MyPFCalc calculator = new MyPFCalc();
                         int lineCounter = 1;
+
+                        // Recorrer el texto del archivo
                         for (int i = 0; i < fileText.length(); i++) {
                             char caracter = fileText.charAt(i);
+                            //Validar que no haya un salto de linea, de lo contrario ya termino la primero operacion y se corta
                             if(caracter != '\n'){
                                 line += caracter;
                             }else{
@@ -56,6 +62,13 @@ public class App {
         scanner.close();
     }
 
+
+    
+    /**
+     * Metodo para leer archivo
+     * @param nombreArchivo El nombre de archivo a leer
+     * @return contenido del string
+     */
     public static String leerArchivo(String nombreArchivo) throws IOException{
         StringBuilder contenido = new StringBuilder();
 
