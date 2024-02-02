@@ -38,7 +38,7 @@ public class MyStack<E> implements UVGStack<E> {
      * Metodo para mostrar el ultimo valor al stack
      * @return E Retorna el valor de hasta arriba del stack
      */
-    public E top() throws Exception {
+    public E peek() throws Exception {
         if(stack.size()>=0){
             return stack.lastElement();
         }else{

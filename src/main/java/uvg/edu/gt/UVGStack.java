@@ -13,7 +13,7 @@ public interface UVGStack<E>
    public E pop() throws Exception;
    // post: el item de arriba es eliminado del stack
    
-   public E top() throws Exception;
+   public E peek() throws Exception;
    // post: retorna el valor del hasta arriba del stack
    
    public boolean empty() ;
