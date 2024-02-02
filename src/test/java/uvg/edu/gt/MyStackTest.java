@@ -21,8 +21,8 @@ public class MyStackTest {
         stack.push(1);
         stack.push(2);
 
-        assertEquals(2, stack.top().intValue());
-        assertEquals(2, stack.top().intValue()); 
+        assertEquals(2, stack.peek().intValue());
+        assertEquals(2, stack.peek().intValue()); 
     }
 
     @Test
